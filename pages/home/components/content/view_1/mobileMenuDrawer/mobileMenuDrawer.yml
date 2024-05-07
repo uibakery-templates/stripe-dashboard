@@ -1,0 +1,76 @@
+id: '17150635395160.4414452420924355'
+definitionId: frameDrawer
+parentSlotId: '17149804548960.22145494966129764'
+styles:
+  xl:
+    gridItem:
+      id: '17150635395160.4414452420924355'
+      x: 20
+      y: 211
+      w: 2
+      h: 9
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 36
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+    buttonIconPlacement: center
+    modalSize:
+      widthValue: 400
+      widthUnit: px
+      heightValue: '100'
+      heightUnit: '%'
+      minWidthValue: 0
+      minWidthUnit: px
+      minHeightValue: 0
+      minHeightUnit: px
+      maxWidthValue: none
+      maxWidthUnit: null
+      maxHeightValue: none
+      maxHeightUnit: null
+  xs:
+    gridItem:
+      x: 0
+      y: 0
+      w: 2
+      h: 9
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 36
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  name: mobileMenuDrawer
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xs
+  buttonText: ''
+  buttonHidden:
+    value: false
+    dataValue: 'false'
+    withData: false
+  buttonIcon:
+    value: menu
+    dataValue: star-outline
+    withData: false
+  drawerAlignment: left
+  buttonAppearance:
+    value: outline
+    dataValue: filled
+    withData: false
+  showHeader: true
+actions: {}
+slots:
+  - id: '17150635395160.25073251481443526'
+    name: header
+    children: []
+  - id: '17150635395160.3889713265450916'
+    name: body
+    children:
+      - mobileMenu.yml
+  - id: '17150635395160.16872105573513685'
+    name: footer
+    children: []

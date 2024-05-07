@@ -1,0 +1,38 @@
+id: '17150000461130.9951623895541997'
+definitionId: heading
+parentSlotId: '17149804548960.22145494966129764'
+styles:
+  xl:
+    gridItem:
+      x: 1
+      y: 99
+      w: 6
+      h: 9
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 36
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+  xs:
+    gridItem:
+      x: 0
+      y: 403
+      w: 24
+      h: 9
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 36
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  name: paymentsHeading
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  text: Payments
+actions: {}
+slots: []

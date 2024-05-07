@@ -1,0 +1,93 @@
+id: '17150711642430.28052745619103914'
+definitionId: metric
+parentSlotId: '17150711522000.22244706963155902'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 0
+      w: 24
+      h: 25
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 112
+        heightUnit: px
+      grow: '1'
+      shrink: '0'
+  xs:
+    gridItem:
+      x: 0
+      y: 0
+      w: 24
+      h: 25
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 112
+        heightUnit: px
+      grow: '1'
+      shrink: '0'
+properties:
+  data: '{{actions.fetchAccountDetails.data.balance}}'
+  name: usdBalanceMetrics
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  title: USD Balance
+  operation: show_last
+  groupType: not_group
+  showLoading:
+    withData: true
+    dataValue: 'false'
+    value: false
+  showGroupField: true
+  containerStyles:
+    withData: false
+    dataValue: |-
+      {
+        padding: 'default',
+        shadow: 'default',
+        border: 'default'
+      }
+    value:
+      padding: none
+      shadow: none
+      border: none
+actions: {}
+slots:
+  - id: '17150711642430.38336959379418456'
+    name: metricField
+    children:
+      - id: '17150711642430.5771035699078897'
+        definitionId: atomicCurrency
+        styles: {}
+        properties:
+          name: atomicCurrency5
+          prop: balance
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+        parentSlotId: '17150711642430.38336959379418456'
+        index: 0
+        slots: []
+  - id: '17150711642430.12096892449934105'
+    name: additionalField
+    children:
+      - id: '17150711642430.2723851103858257'
+        definitionId: atomicString
+        styles: {}
+        properties:
+          name: atomicString6
+          prop: name
+          primaryKey: false
+          __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+            - xl
+            - xs
+          mappedValue: Expected this week
+        parentSlotId: '17150711642430.12096892449934105'
+        index: 1
+        slots: []
+  - id: '17150711642430.2793953450306246'
+    name: groupByField
+    children: []

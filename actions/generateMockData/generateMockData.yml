@@ -1,0 +1,35 @@
+id: '17149956387270.5427666276080745'
+kind: workflow
+name: generateMockData
+nameConfigured: true
+steps:
+  - id: '17149956426050.7605245872310691'
+    type: customAsyncCode
+    name: code
+    params:
+      - type: asyncCode
+        value: ./code.js
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+mode: manual
+modeConfigured: false
+parentId: null
+config:
+  shouldConfirm: false
+  confirmMessage: Are you sure you'd like to proceed with "{{actions.generateMockData.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.generateMockData.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.generateMockData.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: true
+selected: true
+configured: true

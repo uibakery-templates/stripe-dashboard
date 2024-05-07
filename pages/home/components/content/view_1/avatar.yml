@@ -1,0 +1,38 @@
+id: '17149941565520.6664234395161213'
+definitionId: avatar
+parentSlotId: '17149804548960.22145494966129764'
+styles:
+  xl:
+    gridItem:
+      x: 20
+      y: 0
+      w: 4
+      h: 12
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 48
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+  xs:
+    gridItem:
+      x: 14
+      y: 828
+      w: 8
+      h: 12
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 48
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  name: avatar
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+  caption: Accounting
+  heightMode: auto
+actions: {}
+slots: []

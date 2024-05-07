@@ -1,0 +1,39 @@
+id: '17149803703050.12849314137048817'
+definitionId: heading
+parentSlotId: '17149804548960.22145494966129764'
+styles:
+  xl:
+    gridItem:
+      x: 1
+      y: 4
+      w: 19
+      h: 9
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 36
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+  xs:
+    gridItem:
+      x: 3
+      y: 0
+      w: 21
+      h: 9
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 36
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  name: weeklyReportHeading
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  text: Last 7 days
+  alignment: left
+actions: {}
+slots: []

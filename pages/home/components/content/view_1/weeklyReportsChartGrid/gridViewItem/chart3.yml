@@ -1,0 +1,100 @@
+id: '17149827969220.29344120234334037'
+definitionId: chart
+parentSlotId: '17149827723300.3895538111361023'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 0
+      w: 24
+      h: 45
+    flex:
+      alignSelf: auto
+      sizing: shrink-if-needed
+      flexGrow: 0
+      flexShrink: 1
+      flexBasis:
+        customValue: auto
+      order: 0
+      size:
+        widthValue: 250
+        widthUnit: px
+        heightValue: 150
+        heightUnit: px
+      grow: '1'
+      shrink: '0'
+    legend:
+      visible: true
+      orientation: vertical
+      horizontal: right
+      vertical: top
+  xs:
+    gridItem:
+      x: 0
+      y: 0
+      w: 24
+      h: 46
+    flex:
+      alignSelf: auto
+      sizing: shrink-if-needed
+      flexGrow: 0
+      flexShrink: 1
+      flexBasis:
+        customValue: auto
+      order: 0
+      size:
+        widthValue: 250
+        widthUnit: px
+        heightValue: 150
+        heightUnit: px
+      grow: '1'
+      shrink: '0'
+properties:
+  dataset: '{{item.dataPoints}}'
+  config: "return {\n \ttitle: {\n    text: 'Weekly Traffic',\n    padding: 10\n  },\n  tooltip: {\n    trigger: 'axis',\n    axisPointer: {\n      type: 'cross',\n      label: {\n      }\n    }\n  },\n  legend: {\n    data: ['Email', 'Union Ads', 'Video Ads', 'Direct', 'Search Engine'],\n    padding: 30\n  },\n  grid: {\n    left: '3%',\n    right: '4%',\n    bottom: '3%',\n    containLabel: true\n  },\n  xAxis: [\n    {\n      type: 'category',\n      boundaryGap: false,\n      data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']\n    }\n  ],\n  yAxis: [\n    {\n      type: 'value'\n    }\n  ],\n  series: [\n    {\n      name: 'Email',\n      type: 'line',\n      stack: 'Total',\n      areaStyle: {},\n      emphasis: {\n        focus: 'series'\n      },\n      data: [120, 132, 101, 134, 90, 230, 210]\n    },\n    {\n      name: 'Union Ads',\n      type: 'line',\n      stack: 'Total',\n      areaStyle: {},\n      emphasis: {\n        focus: 'series'\n      },\n      data: [220, 182, 191, 234, 290, 330, 310]\n    },\n    {\n      name: 'Video Ads',\n      type: 'line',\n      stack: 'Total',\n      areaStyle: {},\n      emphasis: {\n        focus: 'series'\n      },\n      data: [150, 232, 201, 154, 190, 330, 410]\n    },\n    {\n      name: 'Direct',\n      type: 'line',\n      stack: 'Total',\n      areaStyle: {},\n      emphasis: {\n        focus: 'series'\n      },\n      data: [320, 332, 301, 334, 390, 330, 320]\n    },\n    {\n      name: 'Search Engine',\n      type: 'line',\n      stack: 'Total',\n      areaStyle: {},\n      emphasis: {\n        focus: 'series'\n      },\n      data: [820, 932, 901, 934, 1290, 1330, 1320]\n    }\n  ]\n};"
+  name: chart3
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  title: '{{item.title}}'
+  type: lineChart
+  structure:
+    - title: Current
+      data: []
+      color: primary
+      xProp: time
+      yProp: value
+      ignoreTimezone: false
+      __UIBAKERY__SYSTEM_ID__: '17149898692660.23743449369384106'
+      groupType: day
+      groupFunctionType: show_last
+    - title: Previous Period
+      data: []
+      color: info
+      xProp: time
+      yProp: previousPeriodValue
+      ignoreTimezone: false
+      __UIBAKERY__SYSTEM_ID__: '17150698227160.9743077129807809'
+      groupType: day
+      groupFunctionType: show_last
+  showLoading:
+    value: false
+    dataValue: '{{actions.fetchReportCharts.loading}}'
+    withData: true
+  useJsConfig: ui
+  lineSmooth: false
+  containerStyles:
+    withData: false
+    dataValue: |-
+      {
+        padding: 'default',
+        shadow: 'default',
+        border: 'default'
+      }
+    value:
+      padding: default
+      shadow: default
+      border: default
+  areaFillType: gradient
+actions: {}
+slots: []

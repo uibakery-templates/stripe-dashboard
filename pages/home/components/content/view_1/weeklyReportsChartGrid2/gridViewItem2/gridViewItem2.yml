@@ -1,0 +1,14 @@
+id: '17150756528600.4106886444292459'
+definitionId: gridViewItem
+styles: {}
+properties:
+  name: gridViewItem2
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xs
+parentSlotId: '17150756528600.11311867897658212'
+index: 0
+slots:
+  - id: '17150756528600.8986446349857256'
+    name: content
+    children:
+      - chart2.yml

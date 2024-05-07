@@ -1,0 +1,38 @@
+id: '17149906232280.7966807138852647'
+kind: workflow
+name: fetchAccountDetails
+nameConfigured: true
+steps:
+  - id: '17149906281100.9049042516505521'
+    type: customAsyncCode
+    name: code
+    params:
+      - type: asyncCode
+        value: ./code.js
+        valueType: interpolatedValue
+        interpolationType: code
+    level: 0
+    fallthroughError: false
+    isChanged: true
+mode: manual
+modeConfigured: false
+parentPageId: '1'
+parentId: '17150653628110.722634198508695'
+config:
+  shouldConfirm: false
+  confirmMessage: >-
+    Are you sure you'd like to proceed with
+    "{{actions.fetchAccountDetails.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.fetchAccountDetails.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.fetchAccountDetails.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+selected: true
+configured: true

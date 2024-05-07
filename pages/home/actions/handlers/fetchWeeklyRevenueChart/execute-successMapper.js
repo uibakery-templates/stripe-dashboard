@@ -1,0 +1,1 @@
+return {{data.find(chart => chart.title === 'Gross revenue')}}

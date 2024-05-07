@@ -1,0 +1,52 @@
+id: '17149947312710.6186463107701272'
+definitionId: stringEdit
+parentSlotId: '17149804548960.22145494966129764'
+styles:
+  xl:
+    gridItem:
+      x: 1
+      y: 108
+      w: 12
+      h: 9
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 36
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+  xs:
+    gridItem:
+      x: 0
+      y: 412
+      w: 24
+      h: 9
+    flex:
+      size:
+        widthValue: auto
+        heightValue: 36
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  name: paymentsSearchInput
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  labelWidth: 0
+  labelConfig:
+    text: ''
+    position: horizontal
+    align: left
+  placeholder: Search for a customer
+  iconPlacement: start
+  icon:
+    value: search
+    dataValue: star-outline
+    withData: false
+actions:
+  valueChange:
+    - action: '17150023953630.11869397994507325'
+      paramCode: ''
+      index: 0
+slots: []

@@ -1,0 +1,74 @@
+id: '17150711522000.35001553341891545'
+definitionId: cardNew
+parentSlotId: '17149825781400.15818524158752667'
+styles:
+  xl:
+    gridItem:
+      x: 0
+      y: 0
+      w: 24
+      h: 30
+    flex:
+      size:
+        widthValue: 300
+        widthUnit: px
+        heightValue: 320
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+  xs:
+    gridItem:
+      x: 0
+      y: 0
+      w: 24
+      h: 30
+    flex:
+      size:
+        widthValue: 300
+        widthUnit: px
+        heightValue: 320
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  name: usdBalanceMetricsCard
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xl
+    - xs
+  showHeader: false
+  heightMode: auto
+  containerStyles:
+    withData: false
+    dataValue: |-
+      {
+        padding: 'default',
+        shadow: 'default',
+        border: 'default'
+      }
+    value:
+      padding: default
+      shadow: default
+      border: default
+  cssClasses:
+    - metric-card
+    - ''
+actions:
+  cardClick:
+    - action: '17150712110710.7098488589598531'
+      paramCode: ''
+      blockPageLoad: false
+      preventDefault: false
+      index: 0
+  init: []
+slots:
+  - id: '17150711522000.06191722692083057'
+    name: header
+    children:
+      - heading.yml
+  - id: '17150711522000.871108145019442'
+    name: footer
+    children: []
+  - id: '17150711522000.8387444659392385'
+    name: views
+    children:
+      - view_3/view_3.yml

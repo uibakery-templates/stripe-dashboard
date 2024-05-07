@@ -1,0 +1,45 @@
+id: '17150712110710.7098488589598531'
+kind: workflow
+name: handleMetricCardClick
+nameConfigured: true
+steps:
+  - id: '17150719205550.17480582793224198'
+    type: navigation
+    name: navigate
+    params:
+      - type: url
+        value: '{{routes.home.url}}'
+        valueType: interpolatedValue
+        interpolationType: string
+      - type: queryParams
+        value:
+          - name: ''
+            value: ''
+        valueType: custom
+        interpolationType: string
+    level: 0
+    fallthroughError: false
+    isChanged: true
+    paused: false
+mode: manual
+modeConfigured: false
+parentPageId: '1'
+parentId: '17150653298740.9875262902613822'
+config:
+  shouldConfirm: false
+  confirmMessage: >-
+    Are you sure you'd like to proceed with
+    "{{actions.handleMetricCardClick.name}}"?
+  showSuccessToast: false
+  successToast: Action "{{actions.handleMetricCardClick.name}}" successfully executed
+  successToastDuration: '3000'
+  successToastHideByClick: false
+  showErrorToast: true
+  errorToast: Action "{{actions.handleMetricCardClick.name}}" has failed
+  errorToastDuration: '3000'
+  errorToastHideByClick: false
+  delay: '0'
+  runWhenFirstReferenced: true
+  preserveStateOnPageChange: false
+selected: true
+configured: true

@@ -1,0 +1,54 @@
+id: '17150756528600.7134589780589058'
+definitionId: gridView
+parentSlotId: '17149804548960.22145494966129764'
+styles:
+  xs:
+    gridItem:
+      x: 0
+      y: 39
+      w: 23
+      h: 94
+    flex:
+      size:
+        widthValue: 500
+        widthUnit: px
+        heightValue: 420
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+  xl:
+    gridItem:
+      x: 0
+      y: 220
+      w: 24
+      h: 218
+    flex:
+      size:
+        widthValue: 500
+        widthUnit: px
+        heightValue: 420
+        heightUnit: px
+      grow: '0'
+      shrink: '0'
+properties:
+  columns: '1'
+  data: '{{actions.fetchReportCharts.data}}'
+  limit: '6'
+  name: weeklyReportsChartGrid2
+  __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+    - xs
+  heightMode: auto
+  isDynamicColumns: false
+  showLoading:
+    value: false
+    dataValue: '{{actions.fetchReportCharts.loading}}'
+    withData: true
+  minWidth:
+    customValue: 250
+    customUnit: px
+actions: {}
+slots:
+  - id: '17150756528600.11311867897658212'
+    name: content
+    children:
+      - gridViewItem2/gridViewItem2.yml

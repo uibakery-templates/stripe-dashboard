@@ -1,0 +1,21 @@
+id: '17150019501980.3062403777285059'
+name: content
+children:
+  - id: '17150019502040.16890592328960374'
+    definitionId: layoutSidebar
+    parentSlotId: '17150019501980.3062403777285059'
+    styles: {}
+    properties:
+      name: layoutSidebar
+      __UIBAKERY__RESPONSIVE__SHOW__CONDITION__CODE__:
+        - xl
+      stickySidebar:
+        value: true
+        dataValue: 'false'
+        withData: false
+    index: 0
+    slots:
+      - id: '17150019502040.9415343324348044'
+        name: content
+        children:
+          - components/menu.yml
